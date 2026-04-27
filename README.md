@@ -1,10 +1,11 @@
-Guia de Atividade: Tratamento de Erros (Módulo 09)
-A lidar com Exceptions (erros). Usaremos a estrutura try, except, else e finally para que o nosso código seja "à prova de erros".
+### **Guia de Atividade: Tratamento de Erros (Módulo 09)**
+A lidar com `Exceptions` (erros). Usaremos a estrutura `try`, `except`, `else` e `finally` para que o nosso código seja "à prova de erros".
 
-🚀 Tutorial Completo: Tratamento de Erros
-1. O Básico: Divisão Segura
+# 🚀 Tutorial Completo: Tratamento de Erros
+
+## 1. O Básico: Divisão Segura
 Captura erros de matemática e de digitação.
-
+```python
 def aula_tratamento_erros():
     print("--- Início da Aula de Exceções ---")
     
@@ -38,9 +39,11 @@ def aula_tratamento_erros():
 
 # Executar a função
 aula_tratamento_erros()
-2. POO: Convertendo Duração
-Trata o erro quando o utilizador escreve o tempo por extenso.
+```
 
+## 2. POO: Convertendo Duração
+Trata o erro quando o utilizador escreve o tempo por extenso.
+```python
 class Celular:
     def __init__(self, marca, modelo):
         self.marca = marca
@@ -76,9 +79,11 @@ meu_celular = Celular("Samsung", "S24")
 
 # Teste com erro de valor (mandando uma letra onde devia ser número)
 meu_celular.fazer_chamada("Dez")
-3. POO: Proteção de Tipos
-Usa o TypeError para evitar que o sistema tente subtrair texto de números.
+```
 
+## 3. POO: Proteção de Tipos
+Usa o `TypeError` para evitar que o sistema tente subtrair texto de números.
+```python
 class Celular:
     def __init__(self, marca, modelo):
         self.marca = marca
@@ -117,9 +122,11 @@ meu_celular.fazer_chamada(10)
 
 # CASO 2: Erro propositado (passando uma palavra em vez de número)
 meu_celular.fazer_chamada("muito")
-4. O Desafio Final: Status da Bateria
-Mistura tratamento de float com lógica de decisão if/elif/else.
+```
 
+## 4. O Desafio Final: Status da Bateria
+Mistura tratamento de `float` com lógica de decisão `if/elif/else`.
+```python
 class Celular:
     def __init__(self, marca, modelo):
         self.marca = marca
@@ -153,13 +160,16 @@ class Celular:
 # --- Execução ---
 meu_celular = Celular("Samsung", "S24")
 meu_celular.verificar_status()
-intro_poo_api_cdt
-Este repositório é seu guia completo para os fundamentos da Programação Orientada a Objetos (POO) e o uso prático de APIs, tudo com a Python.
+```
 
-Programação Orientada a Objetos (POO): Explore os pilares da POO – classes, objetos, herança, polimorfismo e encapsulamento. Aprenda a organizar seu código de forma lógica e eficiente, criando programas mais fáceis de entender, manter e escalar.
 
-Integração com APIs: Descubra como seu código Python pode "conversar" com outros sistemas na internet. Veja exemplos práticos de como fazer requisições, receber dados (geralmente em formato JSON) e utilizá-los em seus projetos, abrindo um mundo de possibilidades de integração.
+# intro_poo_api_cdt
+Este repositório é seu guia completo para os **fundamentos da Programação Orientada a Objetos (POO)** e o **uso prático de APIs**, tudo com a **Python**.
 
-Fundamentos Sólidos: Este espaço é perfeito para iniciantes que buscam construir uma base robusta em algoritmos e estruturas de dados essenciais. Cada projeto é desenhado para ajudar você a pensar como um programador, resolver problemas e implementar soluções eficazes.
+* **Programação Orientada a Objetos (POO):** Explore os pilares da POO – **classes**, **objetos**, **herança**, **polimorfismo** e **encapsulamento**. Aprenda a organizar seu código de forma lógica e eficiente, criando programas mais fáceis de entender, manter e escalar. 
+
+* **Integração com APIs:** Descubra como seu código Python pode "conversar" com outros sistemas na internet. Veja exemplos práticos de como **fazer requisições**, **receber dados** (geralmente em formato JSON) e **utilizá-los** em seus projetos, abrindo um mundo de possibilidades de integração.
+
+* **Fundamentos Sólidos:** Este espaço é perfeito para **iniciantes** que buscam construir uma base robusta em **algoritmos e estruturas de dados essenciais**. Cada projeto é desenhado para ajudar você a pensar como um programador, resolver problemas e implementar soluções eficazes.
 
 Sinta-se à vontade para mergulhar nos códigos, testar as implementações e solidificar seu conhecimento em POO e APIs com Python.
